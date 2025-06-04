@@ -12,11 +12,11 @@
      <!-- header section start here -->
     
      <header class="sticky top-0 z-50 bg-[#1C1C1C]">
-          <div class="flex flex-col space-y-2 md:space-y-0.5 md:flex-row px-10 py-5 w-[80%] items-center justify-around mx-auto">
-               <div>
-                    <img src="/images/Logo.png" alt="">
+          <div class="flex space-y-2 md:space-y-0.5 md:flex-row md:px-10 px-0 py-5 md:w-[80%] items-center justify-around mx-auto">
+               <div class="">
+                    <img src="/images/Logo.png" class="w-50"  alt="">
                </div>
-               <div class="flex gap-5 text-white items-center">
+               <div class="hidden  md:flex gap-5 text-white items-center">
 
                     <a href="#" class="text-lg">Home</a>
                     <a href="#" class="text-lg">Careers</a>
@@ -25,10 +25,40 @@
 
                </div>
 
-               <div class="flex gap-5 text-lg items-center">
+               <div class="hidden md:flex gap-5 text-lg items-center">
                     <button class="text-white"> Sign Up</button>
                     <button class="bg-primary px-5 py-2 rounded-full cursor-pointer"> Login</button>
                </div>
+               <!-- navmenu -->
+                <div class="text-white md:hidden cursor-pointer text-3xl items-center -mt-4" id="menuBtn">
+                    <i class="fa-solid fa-bars right-10 fixed"></i>
+                </div>
+
+                <div class="hidden  text-white  w-[70%] h-[100vh] bg-gray-800 fixed top-0 right-0 " id="menu1" >
+
+                    <div class="md:hidden text-white cursor-pointer text-4xl mt-10 ml-10" id="closeBtn">
+                          <i class="fa-solid fa-xmark"></i>
+                    </div>
+                   
+
+                    <div class="mx-auto py-60">
+
+                <div class="flex flex-col md:flex-row gap-5 text-white text-center" >
+
+                    <a href="#" class="text-lg">Home</a>
+                    <a href="#" class="text-lg">Careers</a>
+                    <a href="#" class="text-lg">About</a>
+                    <a href="#" class="text-lg">Security</a>
+
+               </div>
+
+               <div class=" mt-6 flex flex-col md:flex gap-5 text-lg items-center">
+                    <button class="text-white"> Sign Up</button>
+                    <button class="bg-primary text-black px-5 py-2 rounded-full cursor-pointer"> Login</button>
+               </div>
+
+                    </div>
+                </div>
           </div>
      </header>
 
