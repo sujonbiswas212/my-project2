@@ -4,3 +4,7 @@
      --color-primary:#CAFF33;
      --color-blue:#00BCFF;
 }
+
+body{
+     overflow-x: hidden;
+}
